@@ -25,9 +25,12 @@
 //		NSLog(@"nextResponder:%d",[[view nextResponder] isKindOfClass:[UIScrollView class]]);
 //		NSLog(@"%d",view.hidden);
 //		NSLog(@"%d",[view.backgroundColor isKindOfClass:[UIColor clearColor].class]);
+//		NSLog(@"%d",CGColorEqualToColor(view.backgroundColor.CGColor, [UIColor clearColor].CGColor));
+//		NSLog(@"%@",view.backgroundColor);
+//		NSLog(@"%ld",view.tag);
 //		NSLog(@"%lu",(unsigned long)view.subviews.count);
 //		NSLog(@"%@",NSStringFromCGSize(self.frame.size));
-		if (![view.backgroundColor isKindOfClass:[UIColor clearColor].class] &&
+		if (!CGColorEqualToColor(view.backgroundColor.CGColor, [UIColor clearColor].CGColor) &&
 				!view.hidden &&
 				![[view nextResponder] isKindOfClass:[UIScrollView class]]) {
 //			NSLog(@"不是透明层");

@@ -50,7 +50,7 @@
 	
 	self.pageIndex = 0;
 	ViewController *viewCotroller = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
-	HWSpecialCarViewController	*carViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"HWSpecialCarViewController"];
+	HWSpecialCarViewController	*carViewController = [[UIStoryboard storyboardWithName:@"SpecialCar" bundle:nil] instantiateViewControllerWithIdentifier:@"HWSpecialCarViewController"];
 	self.controllers = @[carViewController,viewCotroller];
 	self.pageViewController.dataSource = self;
 	self.pageViewController.delegate = self;
@@ -59,7 +59,6 @@
 		
 	}];
 	
-
 }
 	
 

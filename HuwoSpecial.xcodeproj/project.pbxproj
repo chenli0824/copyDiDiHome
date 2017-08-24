@@ -23,6 +23,7 @@
 		D44547C91F4E6F2A003FBCD9 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547C81F4E6F2A003FBCD9 /* BottomView.m */; };
 		D4EC1BB01F4EB258000C0803 /* HWSpecialCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */; };
 		D4EC1BB31F4EC7CF000C0803 /* BasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */; };
+		D4EC1BB51F4F24CB000C0803 /* SpecialCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1BB41F4F24CB000C0803 /* SpecialCar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSpecialCarViewController.m; sourceTree = "<group>"; };
 		D4EC1BB11F4EC7CF000C0803 /* BasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePageViewController.h; sourceTree = "<group>"; };
 		D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePageViewController.m; sourceTree = "<group>"; };
+		D4EC1BB41F4F24CB000C0803 /* SpecialCar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SpecialCar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */,
 				D4EC1BB11F4EC7CF000C0803 /* BasePageViewController.h */,
 				D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */,
+				D4EC1BB41F4F24CB000C0803 /* SpecialCar.storyboard */,
 			);
 			path = HuwoSpecial;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EC1BB51F4F24CB000C0803 /* SpecialCar.storyboard in Resources */,
 				D44547A41F4D694E003FBCD9 /* LaunchScreen.storyboard in Resources */,
 				D44547A11F4D694E003FBCD9 /* Assets.xcassets in Resources */,
 				D445479C1F4D694E003FBCD9 /* Main.storyboard in Resources */,
