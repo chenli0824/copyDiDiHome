@@ -15,6 +15,14 @@
 		D44547A11F4D694E003FBCD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44547A01F4D694E003FBCD9 /* Assets.xcassets */; };
 		D44547A41F4D694E003FBCD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44547A21F4D694E003FBCD9 /* LaunchScreen.storyboard */; };
 		D44547AF1F4D694E003FBCD9 /* HuwoSpecialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547AE1F4D694E003FBCD9 /* HuwoSpecialTests.m */; };
+		D44547BB1F4D7060003FBCD9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44547BA1F4D7060003FBCD9 /* MapKit.framework */; };
+		D44547BD1F4D70CC003FBCD9 /* express.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44547BC1F4D70CC003FBCD9 /* express.storyboard */; };
+		D44547C01F4D7D8A003FBCD9 /* ToutchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547BF1F4D7D8A003FBCD9 /* ToutchView.m */; };
+		D44547C31F4D7EEA003FBCD9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547C21F4D7EEA003FBCD9 /* HomeViewController.m */; };
+		D44547C61F4DBDF0003FBCD9 /* ChildView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547C51F4DBDF0003FBCD9 /* ChildView.m */; };
+		D44547C91F4E6F2A003FBCD9 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547C81F4E6F2A003FBCD9 /* BottomView.m */; };
+		D4EC1BB01F4EB258000C0803 /* HWSpecialCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */; };
+		D4EC1BB31F4EC7CF000C0803 /* BasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,20 @@
 		D44547AA1F4D694E003FBCD9 /* HuwoSpecialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuwoSpecialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44547AE1F4D694E003FBCD9 /* HuwoSpecialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuwoSpecialTests.m; sourceTree = "<group>"; };
 		D44547B01F4D694E003FBCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44547BA1F4D7060003FBCD9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D44547BC1F4D70CC003FBCD9 /* express.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = express.storyboard; sourceTree = "<group>"; };
+		D44547BE1F4D7D8A003FBCD9 /* ToutchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToutchView.h; sourceTree = "<group>"; };
+		D44547BF1F4D7D8A003FBCD9 /* ToutchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToutchView.m; sourceTree = "<group>"; };
+		D44547C11F4D7EEA003FBCD9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D44547C21F4D7EEA003FBCD9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D44547C41F4DBDF0003FBCD9 /* ChildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildView.h; sourceTree = "<group>"; };
+		D44547C51F4DBDF0003FBCD9 /* ChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildView.m; sourceTree = "<group>"; };
+		D44547C71F4E6F2A003FBCD9 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
+		D44547C81F4E6F2A003FBCD9 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		D4EC1BAE1F4EB258000C0803 /* HWSpecialCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSpecialCarViewController.h; sourceTree = "<group>"; };
+		D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSpecialCarViewController.m; sourceTree = "<group>"; };
+		D4EC1BB11F4EC7CF000C0803 /* BasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePageViewController.h; sourceTree = "<group>"; };
+		D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44547BB1F4D7060003FBCD9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +91,7 @@
 				D44547901F4D694E003FBCD9 /* HuwoSpecial */,
 				D44547AD1F4D694E003FBCD9 /* HuwoSpecialTests */,
 				D445478F1F4D694E003FBCD9 /* Products */,
+				D44547B91F4D7060003FBCD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +117,19 @@
 				D44547A51F4D694E003FBCD9 /* Info.plist */,
 				D445479D1F4D694E003FBCD9 /* HuwoSpecial.xcdatamodeld */,
 				D44547911F4D694E003FBCD9 /* Supporting Files */,
+				D44547BC1F4D70CC003FBCD9 /* express.storyboard */,
+				D44547BE1F4D7D8A003FBCD9 /* ToutchView.h */,
+				D44547BF1F4D7D8A003FBCD9 /* ToutchView.m */,
+				D44547C11F4D7EEA003FBCD9 /* HomeViewController.h */,
+				D44547C21F4D7EEA003FBCD9 /* HomeViewController.m */,
+				D44547C41F4DBDF0003FBCD9 /* ChildView.h */,
+				D44547C51F4DBDF0003FBCD9 /* ChildView.m */,
+				D44547C71F4E6F2A003FBCD9 /* BottomView.h */,
+				D44547C81F4E6F2A003FBCD9 /* BottomView.m */,
+				D4EC1BAE1F4EB258000C0803 /* HWSpecialCarViewController.h */,
+				D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */,
+				D4EC1BB11F4EC7CF000C0803 /* BasePageViewController.h */,
+				D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */,
 			);
 			path = HuwoSpecial;
 			sourceTree = "<group>";
@@ -112,6 +149,14 @@
 				D44547B01F4D694E003FBCD9 /* Info.plist */,
 			);
 			path = HuwoSpecialTests;
+			sourceTree = "<group>";
+		};
+		D44547B91F4D7060003FBCD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D44547BA1F4D7060003FBCD9 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +246,7 @@
 				D44547A41F4D694E003FBCD9 /* LaunchScreen.storyboard in Resources */,
 				D44547A11F4D694E003FBCD9 /* Assets.xcassets in Resources */,
 				D445479C1F4D694E003FBCD9 /* Main.storyboard in Resources */,
+				D44547BD1F4D70CC003FBCD9 /* express.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,10 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44547C61F4DBDF0003FBCD9 /* ChildView.m in Sources */,
 				D445479F1F4D694E003FBCD9 /* HuwoSpecial.xcdatamodeld in Sources */,
+				D44547C01F4D7D8A003FBCD9 /* ToutchView.m in Sources */,
 				D44547991F4D694E003FBCD9 /* ViewController.m in Sources */,
 				D44547961F4D694E003FBCD9 /* AppDelegate.m in Sources */,
 				D44547931F4D694E003FBCD9 /* main.m in Sources */,
+				D4EC1BB31F4EC7CF000C0803 /* BasePageViewController.m in Sources */,
+				D4EC1BB01F4EB258000C0803 /* HWSpecialCarViewController.m in Sources */,
+				D44547C31F4D7EEA003FBCD9 /* HomeViewController.m in Sources */,
+				D44547C91F4E6F2A003FBCD9 /* BottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +474,7 @@
 				D44547B51F4D694E003FBCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44547B61F4D694E003FBCD9 /* Build configuration list for PBXNativeTarget "HuwoSpecialTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +483,7 @@
 				D44547B81F4D694E003FBCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

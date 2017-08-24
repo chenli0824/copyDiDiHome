@@ -16,6 +16,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//	float a = 4832943.343;
+//	int z = (int)a;
+//	NSLog(@"%d",(int)(a*100.0));
+//	int w = (int)a/10000;
+//	NSLog(@"%d万",w);
+//	int q = (int)a%10000/1000;
+//	NSLog(@"%d千",q);
+//	int b = (int)a%10000%1000/100;
+//	NSLog(@"%d百",b);
+//	int s = (int)a%10000%1000%100/10;
+//	NSLog(@"%d十",s);
+//	int k = (int)a%10000%1000%100%10;
+//	NSLog(@"%d块",k);
+//	
+//	
 	// Override point for customization after application launch.
 	return YES;
 }
