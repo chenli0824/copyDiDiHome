@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ToutchView.h"
 
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet ToutchView *touchView;
@@ -19,7 +20,6 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

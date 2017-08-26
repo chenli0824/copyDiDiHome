@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40142931F4FFFCA0070FC2B /* ModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D40142921F4FFFC90070FC2B /* ModalTransitionDelegate.m */; };
+		D40142951F5002A70070FC2B /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40142941F5002A70070FC2B /* User.storyboard */; };
+		D40142981F5003240070FC2B /* UserSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40142971F5003240070FC2B /* UserSliderViewController.m */; };
+		D401429B1F5003B60070FC2B /* SliderAnimationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D401429A1F5003B60070FC2B /* SliderAnimationControl.m */; };
 		D44547931F4D694E003FBCD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547921F4D694E003FBCD9 /* main.m */; };
 		D44547961F4D694E003FBCD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547951F4D694E003FBCD9 /* AppDelegate.m */; };
 		D44547991F4D694E003FBCD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547981F4D694E003FBCD9 /* ViewController.m */; };
@@ -21,9 +25,13 @@
 		D44547C31F4D7EEA003FBCD9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547C21F4D7EEA003FBCD9 /* HomeViewController.m */; };
 		D44547C61F4DBDF0003FBCD9 /* ChildView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547C51F4DBDF0003FBCD9 /* ChildView.m */; };
 		D44547C91F4E6F2A003FBCD9 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44547C81F4E6F2A003FBCD9 /* BottomView.m */; };
+		D49421C91F50745D008CEF0A /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49421C81F50745D008CEF0A /* BaseNavigationController.m */; };
 		D4EC1BB01F4EB258000C0803 /* HWSpecialCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */; };
 		D4EC1BB31F4EC7CF000C0803 /* BasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */; };
 		D4EC1BB51F4F24CB000C0803 /* SpecialCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1BB41F4F24CB000C0803 /* SpecialCar.storyboard */; };
+		D4EC1BBA1F4FB5AA000C0803 /* NowSpecialView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BB91F4FB5AA000C0803 /* NowSpecialView.m */; };
+		D4EC1BBC1F4FB5BA000C0803 /* NowSpecialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4EC1BBB1F4FB5BA000C0803 /* NowSpecialView.xib */; };
+		D4EC1BC01F4FBD1E000C0803 /* SpecialCarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC1BBF1F4FBD1E000C0803 /* SpecialCarViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D40142911F4FFFC90070FC2B /* ModalTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionDelegate.h; sourceTree = "<group>"; };
+		D40142921F4FFFC90070FC2B /* ModalTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionDelegate.m; sourceTree = "<group>"; };
+		D40142941F5002A70070FC2B /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		D40142961F5003240070FC2B /* UserSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSliderViewController.h; sourceTree = "<group>"; };
+		D40142971F5003240070FC2B /* UserSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSliderViewController.m; sourceTree = "<group>"; };
+		D40142991F5003B60070FC2B /* SliderAnimationControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderAnimationControl.h; sourceTree = "<group>"; };
+		D401429A1F5003B60070FC2B /* SliderAnimationControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderAnimationControl.m; sourceTree = "<group>"; };
 		D445478E1F4D694E003FBCD9 /* HuwoSpecial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuwoSpecial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44547921F4D694E003FBCD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D44547941F4D694E003FBCD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,11 +76,18 @@
 		D44547C51F4DBDF0003FBCD9 /* ChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildView.m; sourceTree = "<group>"; };
 		D44547C71F4E6F2A003FBCD9 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
 		D44547C81F4E6F2A003FBCD9 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		D49421C71F50745D008CEF0A /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		D49421C81F50745D008CEF0A /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		D4EC1BAE1F4EB258000C0803 /* HWSpecialCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSpecialCarViewController.h; sourceTree = "<group>"; };
 		D4EC1BAF1F4EB258000C0803 /* HWSpecialCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSpecialCarViewController.m; sourceTree = "<group>"; };
 		D4EC1BB11F4EC7CF000C0803 /* BasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePageViewController.h; sourceTree = "<group>"; };
 		D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePageViewController.m; sourceTree = "<group>"; };
 		D4EC1BB41F4F24CB000C0803 /* SpecialCar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SpecialCar.storyboard; sourceTree = "<group>"; };
+		D4EC1BB81F4FB5AA000C0803 /* NowSpecialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowSpecialView.h; sourceTree = "<group>"; };
+		D4EC1BB91F4FB5AA000C0803 /* NowSpecialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowSpecialView.m; sourceTree = "<group>"; };
+		D4EC1BBB1F4FB5BA000C0803 /* NowSpecialView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NowSpecialView.xib; sourceTree = "<group>"; };
+		D4EC1BBE1F4FBD1E000C0803 /* SpecialCarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialCarViewModel.h; sourceTree = "<group>"; };
+		D4EC1BBF1F4FBD1E000C0803 /* SpecialCarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialCarViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +112,7 @@
 		D44547851F4D694E003FBCD9 = {
 			isa = PBXGroup;
 			children = (
+				D4EC1BB61F4FB538000C0803 /* SpecialCar */,
 				D44547901F4D694E003FBCD9 /* HuwoSpecial */,
 				D44547AD1F4D694E003FBCD9 /* HuwoSpecialTests */,
 				D445478F1F4D694E003FBCD9 /* Products */,
@@ -133,6 +156,15 @@
 				D4EC1BB11F4EC7CF000C0803 /* BasePageViewController.h */,
 				D4EC1BB21F4EC7CF000C0803 /* BasePageViewController.m */,
 				D4EC1BB41F4F24CB000C0803 /* SpecialCar.storyboard */,
+				D40142911F4FFFC90070FC2B /* ModalTransitionDelegate.h */,
+				D40142921F4FFFC90070FC2B /* ModalTransitionDelegate.m */,
+				D40142941F5002A70070FC2B /* User.storyboard */,
+				D40142961F5003240070FC2B /* UserSliderViewController.h */,
+				D40142971F5003240070FC2B /* UserSliderViewController.m */,
+				D40142991F5003B60070FC2B /* SliderAnimationControl.h */,
+				D401429A1F5003B60070FC2B /* SliderAnimationControl.m */,
+				D49421C71F50745D008CEF0A /* BaseNavigationController.h */,
+				D49421C81F50745D008CEF0A /* BaseNavigationController.m */,
 			);
 			path = HuwoSpecial;
 			sourceTree = "<group>";
@@ -160,6 +192,34 @@
 				D44547BA1F4D7060003FBCD9 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4EC1BB61F4FB538000C0803 /* SpecialCar */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC1BBD1F4FBCEC000C0803 /* ViewModels */,
+				D4EC1BB71F4FB54A000C0803 /* Views */,
+			);
+			name = SpecialCar;
+			sourceTree = "<group>";
+		};
+		D4EC1BB71F4FB54A000C0803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC1BB81F4FB5AA000C0803 /* NowSpecialView.h */,
+				D4EC1BB91F4FB5AA000C0803 /* NowSpecialView.m */,
+				D4EC1BBB1F4FB5BA000C0803 /* NowSpecialView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D4EC1BBD1F4FBCEC000C0803 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC1BBE1F4FBD1E000C0803 /* SpecialCarViewModel.h */,
+				D4EC1BBF1F4FBD1E000C0803 /* SpecialCarViewModel.m */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +309,9 @@
 				D4EC1BB51F4F24CB000C0803 /* SpecialCar.storyboard in Resources */,
 				D44547A41F4D694E003FBCD9 /* LaunchScreen.storyboard in Resources */,
 				D44547A11F4D694E003FBCD9 /* Assets.xcassets in Resources */,
+				D4EC1BBC1F4FB5BA000C0803 /* NowSpecialView.xib in Resources */,
 				D445479C1F4D694E003FBCD9 /* Main.storyboard in Resources */,
+				D40142951F5002A70070FC2B /* User.storyboard in Resources */,
 				D44547BD1F4D70CC003FBCD9 /* express.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,13 +332,19 @@
 			files = (
 				D44547C61F4DBDF0003FBCD9 /* ChildView.m in Sources */,
 				D445479F1F4D694E003FBCD9 /* HuwoSpecial.xcdatamodeld in Sources */,
+				D4EC1BBA1F4FB5AA000C0803 /* NowSpecialView.m in Sources */,
 				D44547C01F4D7D8A003FBCD9 /* ToutchView.m in Sources */,
+				D49421C91F50745D008CEF0A /* BaseNavigationController.m in Sources */,
+				D401429B1F5003B60070FC2B /* SliderAnimationControl.m in Sources */,
 				D44547991F4D694E003FBCD9 /* ViewController.m in Sources */,
 				D44547961F4D694E003FBCD9 /* AppDelegate.m in Sources */,
 				D44547931F4D694E003FBCD9 /* main.m in Sources */,
+				D4EC1BC01F4FBD1E000C0803 /* SpecialCarViewModel.m in Sources */,
 				D4EC1BB31F4EC7CF000C0803 /* BasePageViewController.m in Sources */,
 				D4EC1BB01F4EB258000C0803 /* HWSpecialCarViewController.m in Sources */,
+				D40142981F5003240070FC2B /* UserSliderViewController.m in Sources */,
 				D44547C31F4D7EEA003FBCD9 /* HomeViewController.m in Sources */,
+				D40142931F4FFFCA0070FC2B /* ModalTransitionDelegate.m in Sources */,
 				D44547C91F4E6F2A003FBCD9 /* BottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

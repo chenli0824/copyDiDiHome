@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDR-ek-Pb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529" y="119"/>
+            <point key="canvasLocation" x="-441" y="117"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="GbE-sb-cAT">
@@ -53,6 +53,9 @@
                                         <rect key="frame" x="102" y="7" width="103" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="专车"/>
+                                        <connections>
+                                            <action selector="buttonIndexAction:" destination="rjN-YX-a84" eventType="touchUpInside" id="rkr-ZN-PGq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrF-37-7Lf">
                                         <rect key="frame" x="213" y="7" width="121" height="30"/>
@@ -91,7 +94,13 @@
                             <constraint firstItem="Adl-Rf-e5T" firstAttribute="top" secondItem="qMs-7G-NE9" secondAttribute="bottom" id="xfG-RS-er9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iBG-I5-jgP"/>
+                    <navigationItem key="navigationItem" id="iBG-I5-jgP">
+                        <barButtonItem key="leftBarButtonItem" title="用户" id="4Za-H3-Ff8">
+                            <connections>
+                                <action selector="userAction:" destination="rjN-YX-a84" id="UFj-Dd-Ccm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="Adl-Rf-e5T" id="Rh7-Zo-cdR"/>
                     </connections>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NowSpecialView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B51-mO-ocE">
+                    <rect key="frame" x="8" y="46" width="359" height="30"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WsB-cM-vDq"/>
+                    </constraints>
+                    <state key="normal" title="From">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KS-u7-FvK">
+                    <rect key="frame" x="8" y="84" width="359" height="30"/>
+                    <color key="backgroundColor" red="0.2574407756" green="0.028132446110000001" blue="0.019692810250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="jeC-lY-8Rn"/>
+                    </constraints>
+                    <state key="normal" title="To">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKe-Fc-Yf3">
+                    <rect key="frame" x="8" y="8" width="359" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3Vj-lk-obG"/>
+                    </constraints>
+                    <state key="normal" title="选择预约时间">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="B51-mO-ocE" firstAttribute="top" secondItem="kKe-Fc-Yf3" secondAttribute="bottom" constant="8" id="6hq-wc-1Wf"/>
+                <constraint firstAttribute="bottom" secondItem="0KS-u7-FvK" secondAttribute="bottom" constant="8" id="74P-8x-Rc6"/>
+                <constraint firstAttribute="trailing" secondItem="0KS-u7-FvK" secondAttribute="trailing" constant="8" id="7Ue-la-vxA"/>
+                <constraint firstItem="B51-mO-ocE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="8Ys-SQ-9GD"/>
+                <constraint firstItem="0KS-u7-FvK" firstAttribute="top" secondItem="B51-mO-ocE" secondAttribute="bottom" constant="8" id="MA0-tg-vwh"/>
+                <constraint firstItem="kKe-Fc-Yf3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Nph-Wb-qpY"/>
+                <constraint firstAttribute="trailing" secondItem="B51-mO-ocE" secondAttribute="trailing" constant="8" id="TG8-Mi-sFv"/>
+                <constraint firstItem="0KS-u7-FvK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="WvJ-4J-eck"/>
+                <constraint firstAttribute="trailing" secondItem="kKe-Fc-Yf3" secondAttribute="trailing" constant="8" id="h28-Y9-mq2"/>
+                <constraint firstItem="kKe-Fc-Yf3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="syZ-zs-d2r"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateButtonHeight" destination="3Vj-lk-obG" id="Oop-pV-pC9"/>
+                <outlet property="fromButton" destination="B51-mO-ocE" id="LLV-bh-FQf"/>
+                <outlet property="selectDateButton" destination="kKe-Fc-Yf3" id="axz-dc-D1d"/>
+                <outlet property="toButton" destination="0KS-u7-FvK" id="TQA-QF-tzg"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="-265"/>
+        </view>
+    </objects>
+</document>

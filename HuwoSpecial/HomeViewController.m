@@ -11,12 +11,16 @@
 #import "ViewController.h"
 #import "HWSpecialCarViewController.h"
 #import "BasePageViewController.h"
+#import "ModalTransitionDelegate.h"
+#import "SliderAnimationControl.h"
+#import "UserSliderViewController.h"
 
 @interface HomeViewController ()<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 @property (weak, nonatomic) IBOutlet ChildView *containerView;
 @property	(nonatomic,strong)	BasePageViewController *pageViewController;
 @property	(nonatomic,strong) NSArray *controllers;
 @property	(nonatomic,assign) int pageIndex;
+@property	(nonatomic,strong) ModalTransitionDelegate	*transitionDelegate;
 
 @end
 
@@ -24,7 +28,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-
+	SliderAnimationControl *sliderAnimation = [[SliderAnimationControl alloc] init];
+	self.transitionDelegate = [[ModalTransitionDelegate alloc] initWithTransitioning:sliderAnimation];
 //	UIPageViewController *pageViewController = self.containerView
     // Do any additional setup after loading the view.
 }
@@ -36,14 +41,17 @@
 			
 		}];
 	}
-	else{
+	else if(self.pageIndex == 1){
 		self.pageIndex = 0;
 		[self.pageViewController setViewControllers:@[self.controllers[self.pageIndex]] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:^(BOOL finished) {
 			
 		}];
 	}
 	
+	
 }
+
+
 
 
 -(void)initPageViewController{
@@ -81,7 +89,18 @@
 	return nil;
 }
 
-
+- (IBAction)userAction:(id)sender {
+	
+	
+	
+	UserSliderViewController	*userSliderView = [[UIStoryboard storyboardWithName:@"User" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass(UserSliderViewController.class)];
+	userSliderView.transitioningDelegate= self.transitionDelegate;
+	userSliderView.modalPresentationStyle = UIModalPresentationCustom;
+	[self presentViewController:userSliderView animated:YES completion:^{
+		
+	}];
+	
+}
 
 //-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 //	NSLog(@"home:%@",touches);

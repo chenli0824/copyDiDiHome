@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Slider View Controller-->
+        <scene sceneID="hGB-ig-ziV">
+            <objects>
+                <viewController storyboardIdentifier="UserSliderViewController" wantsFullScreenLayout="YES" id="Sr7-hh-y1y" customClass="UserSliderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZCU-N2-ohe"/>
+                        <viewControllerLayoutGuide type="bottom" id="dUG-as-Rjd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dpl-Wy-Yer">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FSX-fr-01g">
+                                <rect key="frame" x="0.0" y="-20" width="240" height="687"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3Gm-TJ-s1I"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FSX-fr-01g" firstAttribute="top" secondItem="ZCU-N2-ohe" secondAttribute="bottom" constant="-20" id="13S-zh-iMt"/>
+                            <constraint firstItem="FSX-fr-01g" firstAttribute="leading" secondItem="Dpl-Wy-Yer" secondAttribute="leading" id="8dw-HP-Xor"/>
+                            <constraint firstItem="dUG-as-Rjd" firstAttribute="top" secondItem="FSX-fr-01g" secondAttribute="bottom" id="Oed-Fz-xza"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="leadingConstraint" destination="8dw-HP-Xor" id="Mwy-ZW-RZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Goe-D5-XdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="151.57421289355324"/>
+        </scene>
+    </scenes>
+</document>
