@@ -9,6 +9,8 @@
 #import "HomeViewController.h"
 #import "ChildView.h"
 #import "ViewController.h"
+#import "SpecialCarServiceImpl.h"
+#import "SpecialCarViewModel.h"
 #import "HWSpecialCarViewController.h"
 #import "BasePageViewController.h"
 #import "ModalTransitionDelegate.h"
@@ -25,6 +27,16 @@
 @end
 
 @implementation HomeViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+	[super viewWillAppear:animated];
+	[self.navigationController setNavigationBarHidden:YES];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+	[super viewWillDisappear:animated];
+	[self.navigationController setNavigationBarHidden:NO];
+}
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -58,7 +70,9 @@
 	
 	self.pageIndex = 0;
 	ViewController *viewCotroller = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
-	HWSpecialCarViewController	*carViewController = [[UIStoryboard storyboardWithName:@"SpecialCar" bundle:nil] instantiateViewControllerWithIdentifier:@"HWSpecialCarViewController"];
+	SpecialCarViewModel *viewModel = [[SpecialCarViewModel alloc] initWithService:[[SpecialCarServiceImpl alloc] initWithNavigationController:self.navigationController]];
+	HWSpecialCarViewController	*carViewController = [[HWSpecialCarViewController alloc] initWithStoryboard:@"SpecialCar" identifier:@"HWSpecialCarViewController" viewModel:viewModel];
+	
 	self.controllers = @[carViewController,viewCotroller];
 	self.pageViewController.dataSource = self;
 	self.pageViewController.delegate = self;
@@ -68,44 +82,25 @@
 	}];
 	
 }
-	
 
-//-(NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController{
-//	return self.controllers.count;
-//}
-//
-//-(NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController{
-//	return self.pageIndex;
-//}
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
 	NSLog(@"%@",viewController);
-//	HWSpecialCarViewController	*carViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"HWSpecialCarViewController"];
 	return nil;
 }
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
 	NSLog(@"%@",viewController);
-//	HWSpecialCarViewController	*carViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"HWSpecialCarViewController"];
 	return nil;
 }
 
 - (IBAction)userAction:(id)sender {
-	
-	
-	
 	UserSliderViewController	*userSliderView = [[UIStoryboard storyboardWithName:@"User" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass(UserSliderViewController.class)];
 	userSliderView.transitioningDelegate= self.transitionDelegate;
 	userSliderView.modalPresentationStyle = UIModalPresentationCustom;
 	[self presentViewController:userSliderView animated:YES completion:^{
 		
 	}];
-	
 }
-
-//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//	NSLog(@"home:%@",touches);
-//	NSLog(@"%@",[self nextResponder]);
-//}
 
 
 - (void)didReceiveMemoryWarning {

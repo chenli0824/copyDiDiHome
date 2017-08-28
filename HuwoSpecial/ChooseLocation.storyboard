@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Location View Controller-->
+        <scene sceneID="rwf-Zg-7jO">
+            <objects>
+                <viewController storyboardIdentifier="ChooseLocationViewController" id="ue7-m2-jUC" customClass="ChooseLocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wER-FW-gYp"/>
+                        <viewControllerLayoutGuide type="bottom" id="61b-dy-iR0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tQw-Hn-OlT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpK-MV-K0r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pu5-oV-KuL">
+                                        <rect key="frame" x="321" y="26" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="OfJ-Ro-HWH"/>
+                                            <constraint firstAttribute="height" constant="30" id="zHR-SM-v7v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                        <state key="normal" title="取消">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeAction:" destination="ue7-m2-jUC" eventType="touchUpInside" id="eLz-W8-fa9"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="您要去哪儿" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bjl-MS-G3K">
+                                        <rect key="frame" x="66" y="26" width="247" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qd6-Q2-xv4"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-kI-g9r">
+                                        <rect key="frame" x="8" y="26" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="C0x-xO-EXY"/>
+                                            <constraint firstAttribute="width" constant="46" id="QmB-oX-B62"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                        <state key="normal" title="重庆">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Bjl-MS-G3K" firstAttribute="leading" secondItem="dSk-kI-g9r" secondAttribute="trailing" constant="12" id="4xo-Ew-KC5"/>
+                                    <constraint firstAttribute="bottom" secondItem="dSk-kI-g9r" secondAttribute="bottom" constant="8" id="F42-ix-1lu"/>
+                                    <constraint firstAttribute="height" constant="64" id="eJN-OC-R45"/>
+                                    <constraint firstAttribute="trailing" secondItem="pu5-oV-KuL" secondAttribute="trailing" constant="8" id="hgs-TU-O8I"/>
+                                    <constraint firstItem="pu5-oV-KuL" firstAttribute="leading" secondItem="Bjl-MS-G3K" secondAttribute="trailing" constant="8" id="iP6-Pe-Kpy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bjl-MS-G3K" secondAttribute="bottom" constant="8" id="lSA-ch-df8"/>
+                                    <constraint firstItem="dSk-kI-g9r" firstAttribute="leading" secondItem="fpK-MV-K0r" secondAttribute="leading" constant="8" id="poq-Na-cgH"/>
+                                    <constraint firstAttribute="bottom" secondItem="pu5-oV-KuL" secondAttribute="bottom" constant="8" id="zPR-1p-DXq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgl-hp-E9R">
+                                <rect key="frame" x="16" y="72" width="343" height="595"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="选择地址_圆角矩形.png" translatesAutoresizingMaskIntoConstraints="NO" id="CBm-hq-QNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="595"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eqo-hJ-XSX">
+                                        <rect key="frame" x="3" y="70" width="337" height="525"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBT-K8-1Sb">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAG-k2-gyU">
+                                                <rect key="frame" x="8" y="8" width="103.5" height="54"/>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="13"/>
+                                                <state key="normal" title="  家" image="选择地址_家.png">
+                                                    <color key="titleColor" red="0.62108998764589951" green="0.62108998764589951" blue="0.62108998764589951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZT-3f-dvr">
+                                                <rect key="frame" x="119.5" y="8" width="104" height="54"/>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="13"/>
+                                                <state key="normal" title="  公司" image="选择地址_公司.png">
+                                                    <color key="titleColor" red="0.6210899876" green="0.6210899876" blue="0.6210899876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDY-0k-qNB">
+                                                <rect key="frame" x="231.5" y="8" width="103.5" height="54"/>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="13"/>
+                                                <state key="normal" title="  收藏" image="选择地址_未收藏.png">
+                                                    <color key="titleColor" red="0.6210899876" green="0.6210899876" blue="0.6210899876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="eZT-3f-dvr" firstAttribute="centerY" secondItem="bBT-K8-1Sb" secondAttribute="centerY" id="4bt-FT-asQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="eZT-3f-dvr" secondAttribute="bottom" constant="8" id="60Y-uE-3Fs"/>
+                                            <constraint firstItem="eZT-3f-dvr" firstAttribute="centerX" secondItem="bBT-K8-1Sb" secondAttribute="centerX" id="Ekx-Ve-0UP"/>
+                                            <constraint firstItem="eZT-3f-dvr" firstAttribute="leading" secondItem="nAG-k2-gyU" secondAttribute="trailing" constant="8" id="H5f-dU-DeM"/>
+                                            <constraint firstItem="eZT-3f-dvr" firstAttribute="top" secondItem="bBT-K8-1Sb" secondAttribute="top" constant="8" id="IJK-ij-Dr3"/>
+                                            <constraint firstAttribute="trailing" secondItem="vDY-0k-qNB" secondAttribute="trailing" constant="8" id="Ik3-iA-fTg"/>
+                                            <constraint firstItem="eZT-3f-dvr" firstAttribute="width" secondItem="nAG-k2-gyU" secondAttribute="width" id="JRv-U1-jfc"/>
+                                            <constraint firstItem="eZT-3f-dvr" firstAttribute="leading" secondItem="nAG-k2-gyU" secondAttribute="trailing" constant="8" id="WmY-L7-VqY"/>
+                                            <constraint firstItem="nAG-k2-gyU" firstAttribute="leading" secondItem="bBT-K8-1Sb" secondAttribute="leading" constant="8" id="fYm-qS-0fa"/>
+                                            <constraint firstAttribute="bottom" secondItem="nAG-k2-gyU" secondAttribute="bottom" constant="8" id="hDH-ji-B4C"/>
+                                            <constraint firstAttribute="height" constant="70" id="heg-pZ-Dnt"/>
+                                            <constraint firstItem="vDY-0k-qNB" firstAttribute="leading" secondItem="eZT-3f-dvr" secondAttribute="trailing" constant="8" id="ibi-ll-aAr"/>
+                                            <constraint firstItem="vDY-0k-qNB" firstAttribute="leading" secondItem="eZT-3f-dvr" secondAttribute="trailing" constant="8" id="jC1-pF-utg"/>
+                                            <constraint firstItem="vDY-0k-qNB" firstAttribute="top" secondItem="bBT-K8-1Sb" secondAttribute="top" constant="8" id="l5K-ZN-u9Z"/>
+                                            <constraint firstItem="nAG-k2-gyU" firstAttribute="top" secondItem="bBT-K8-1Sb" secondAttribute="top" constant="8" id="mtx-yo-wI2"/>
+                                            <constraint firstAttribute="bottom" secondItem="vDY-0k-qNB" secondAttribute="bottom" constant="8" id="n4e-Ad-hNi"/>
+                                            <constraint firstItem="vDY-0k-qNB" firstAttribute="width" secondItem="nAG-k2-gyU" secondAttribute="width" id="ofs-L8-034"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eqo-hJ-XSX" firstAttribute="leading" secondItem="Xgl-hp-E9R" secondAttribute="leading" constant="3" id="6F8-v9-LSs"/>
+                                    <constraint firstItem="bBT-K8-1Sb" firstAttribute="leading" secondItem="Xgl-hp-E9R" secondAttribute="leading" id="Cqj-y0-VvX"/>
+                                    <constraint firstAttribute="trailing" secondItem="bBT-K8-1Sb" secondAttribute="trailing" id="V6c-rr-BsQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="CBm-hq-QNe" secondAttribute="trailing" id="WY1-wY-Vxe"/>
+                                    <constraint firstAttribute="bottom" secondItem="eqo-hJ-XSX" secondAttribute="bottom" id="YEp-mn-cWh"/>
+                                    <constraint firstItem="CBm-hq-QNe" firstAttribute="leading" secondItem="Xgl-hp-E9R" secondAttribute="leading" id="bS0-wE-Glh"/>
+                                    <constraint firstItem="bBT-K8-1Sb" firstAttribute="top" secondItem="Xgl-hp-E9R" secondAttribute="top" id="eI2-XP-4iu"/>
+                                    <constraint firstItem="CBm-hq-QNe" firstAttribute="top" secondItem="Xgl-hp-E9R" secondAttribute="top" id="enw-5U-RED"/>
+                                    <constraint firstAttribute="bottom" secondItem="CBm-hq-QNe" secondAttribute="bottom" id="kNo-7q-Sb7"/>
+                                    <constraint firstItem="eqo-hJ-XSX" firstAttribute="top" secondItem="bBT-K8-1Sb" secondAttribute="bottom" id="rmv-S6-nfl"/>
+                                    <constraint firstAttribute="trailing" secondItem="eqo-hJ-XSX" secondAttribute="trailing" constant="3" id="wIQ-kD-bMF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xgl-hp-E9R" firstAttribute="leading" secondItem="tQw-Hn-OlT" secondAttribute="leadingMargin" id="0Nv-Nh-4sw"/>
+                            <constraint firstItem="Xgl-hp-E9R" firstAttribute="trailing" secondItem="tQw-Hn-OlT" secondAttribute="trailingMargin" id="4Ej-yi-qBf"/>
+                            <constraint firstAttribute="trailing" secondItem="fpK-MV-K0r" secondAttribute="trailing" id="FRV-5o-Zod"/>
+                            <constraint firstItem="61b-dy-iR0" firstAttribute="top" secondItem="Xgl-hp-E9R" secondAttribute="bottom" id="Mhi-8u-lVK"/>
+                            <constraint firstItem="fpK-MV-K0r" firstAttribute="top" secondItem="wER-FW-gYp" secondAttribute="bottom" constant="-20" id="duP-Ir-KWW"/>
+                            <constraint firstItem="Xgl-hp-E9R" firstAttribute="top" secondItem="fpK-MV-K0r" secondAttribute="bottom" constant="8" id="tYE-sE-Dsv"/>
+                            <constraint firstItem="fpK-MV-K0r" firstAttribute="leading" secondItem="tQw-Hn-OlT" secondAttribute="leading" id="vc4-As-ZNG"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdV-8L-F5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="选择地址_公司.png" width="13" height="13"/>
+        <image name="选择地址_圆角矩形.png" width="355" height="598"/>
+        <image name="选择地址_家.png" width="12" height="13"/>
+        <image name="选择地址_未收藏.png" width="13" height="12"/>
+    </resources>
+</document>

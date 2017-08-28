@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLViewController.h"
+#import "SpecialCarViewModel.h"
+@interface HWSpecialCarViewController : CLViewController
 
-@interface HWSpecialCarViewController : UIViewController
+@property(nonatomic,strong)	SpecialCarViewModel	*viewModel;
 
 @end

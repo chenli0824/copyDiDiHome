@@ -7,8 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "SpecialCarService.h"
 @interface SpecialCarViewModel : NSObject
 
+
+-(instancetype)initWithService:(id<SpecialCarService>)service;
+
+
+-(void)showChooseLocationView;
+-(void)showChooseLocationView:(UIViewController *)controller;
 
 @end

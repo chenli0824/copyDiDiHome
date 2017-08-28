@@ -12,7 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *selectDateButton;
 @property (weak, nonatomic) IBOutlet UIButton *fromButton;
-@property (weak, nonatomic) IBOutlet UIButton *toButton;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *dateButtonHeight;
 
 
@@ -22,13 +22,39 @@
 
 
 -(void)specialNow{
-	self.selectDateButton.hidden = YES;
 	self.dateButtonHeight.constant = 0;
+//	[self viewAnimate];
+	self.selectDateButton.hidden = YES;
 }
 
 -(void)specialReservations{
+	
+	self.dateButtonHeight.constant = 40;
+//	[self viewAnimate];
 	self.selectDateButton.hidden = NO;
-	self.dateButtonHeight.constant = 30;
+}
+
+
+-(void)viewAnimate{
+	[self updateConstraints];
+	[UIView animateWithDuration:0.15
+									 animations:^{
+										 [self layoutIfNeeded];
+									 } completion:^(BOOL finished) {
+										 
+									 }];
+}
+
+-(IBAction)selectDateAction:(id)sender{
+	NSLog(@"选择时间");
+}
+
+-(IBAction)fromButtonAction:(UIButton *)sender{
+	NSLog(@"from");
+}
+
+-(IBAction)toButtonAction:(UIButton *)sender{
+	NSLog(@"to");
 }
 /*
 // Only override drawRect: if you perform custom drawing.

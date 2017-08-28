@@ -10,6 +10,8 @@
 
 @interface NowSpecialView : UIView
 
+@property (weak, nonatomic) IBOutlet UIButton *toButton;
+
 -(void)specialNow;
 -(void)specialReservations;
 

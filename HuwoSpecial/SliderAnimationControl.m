@@ -7,7 +7,6 @@
 //
 
 #import "SliderAnimationControl.h"
-#import "UserSliderViewController.h"
 
 @implementation SliderAnimationControl
 

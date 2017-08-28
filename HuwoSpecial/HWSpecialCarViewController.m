@@ -8,80 +8,113 @@
 
 #import "HWSpecialCarViewController.h"
 #import "NowSpecialView.h"
+#import "AirPortSpecialView.h"
 
 @interface HWSpecialCarViewController ()
 @property (weak, nonatomic) IBOutlet UIView *functionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *functionHeightConstrains;
 @property	(nonatomic,assign) int currentType;
-@property	(nonatomic,strong) NowSpecialView *nowSpecialView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
+@property (strong, nonatomic)  NowSpecialView *nowSpecialView;
+@property (strong, nonatomic)  AirPortSpecialView *airPortSpecialView;
 
 @end
 
 @implementation HWSpecialCarViewController
 
+@dynamic viewModel;
 
 -(void)viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
-//	self.nowSpecialView = [[[NSBundle mainBundle] loadNibNamed:@"NowSpecialView" owner:nil options:nil] lastObject];
-////	if (self.currentType == 0) {
-////		[self.nowSpecialView specialNow];
-////	}
-//	NSLog(@"%@",NSStringFromCGSize(self.nowSpecialView.frame.size));
-//	NSLog(@"%@",NSStringFromCGSize(self.functionView.frame.size));
-//	
-//	self.functionHeightConstrains.constant = CGRectGetHeight(self.nowSpecialView.frame)-30;
-//	
-//    CGRect frame      = self.nowSpecialView.frame;
-//    frame.size.width  = CGRectGetWidth(self.functionView.frame);
-//    frame.size.height = CGRectGetHeight(self.functionView.frame);
-//	self.nowSpecialView.frame = frame;
-//	
-//	NSLog(@"%@",NSStringFromCGSize(self.nowSpecialView.frame.size));
-//	NSLog(@"%@",NSStringFromCGSize(self.functionView.frame.size));
-//	
-//	[self.functionView addSubview:self.nowSpecialView];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	self.airPortSpecialView = [[[NSBundle mainBundle] loadNibNamed:@"AirPortSpecialView" owner:nil options:nil] lastObject];
+	self.nowSpecialView = [[[NSBundle mainBundle] loadNibNamed:@"NowSpecialView" owner:nil options:nil] lastObject];
+	[self.nowSpecialView specialNow];
+	[self.functionView addSubview:self.nowSpecialView];
+	[self addFunctionViewConstraintsInView:self.nowSpecialView];
 	self.currentType = 0;
-	
-	
-    // Do any additional setup after loading the view.
+	[self updateViewAnimate];
+	[self.nowSpecialView.toButton addTarget:self action:@selector(toAction) forControlEvents:UIControlEventTouchUpInside];
 }
-- (IBAction)chooseType:(UIButton *)sender {
+
+
+
+-(IBAction)chooseType:(UIButton *)sender {
 	
-//	CGRect frame = self.functionView.layer.frame;
-//	
-//	
-//	if (sender.tag == 1) {
-//		
-////		[self.nowSpecialView specialReservations];
-////		[self.functionView setNeedsUpdateConstraints];
-//		
-//		self.functionHeightConstrains.constant = 158;
-//	}
-//	else{
-//		
-//		self.functionHeightConstrains.constant = 122;
-////		[self.nowSpecialView specialNow];
-//	}
-////
-//	[self.functionView setNeedsUpdateConstraints];
-//	[UIView transitionWithView:self.functionView duration:0.1 options:UIViewAnimationOptionCurveEaseIn
-//									animations:^{
-//									
-//										[self.functionView layoutIfNeeded];
-//									} completion:^(BOOL finished) {
-//										
-//									}];
-//	[UIView animateWithDuration:1.0 animations:^{
-//		[self.functionView layoutIfNeeded];
-//		
-//		
-//	}];
-//
+	if (sender.tag == 0 && sender.tag == 1) {
+		
+	}
+	
+	if (sender.tag == 0) {
+		//专车预约
+		[self.airPortSpecialView removeFromSuperview];
+		if (!self.nowSpecialView.superview) {
+			[self.functionView addSubview:self.nowSpecialView];
+			[self addFunctionViewConstraintsInView:self.nowSpecialView];
+		}
+		
+		
+		[self.nowSpecialView specialNow];
+	}
+	else if(sender.tag == 1){
+		[self.airPortSpecialView removeFromSuperview];
+		if (!self.nowSpecialView.superview) {
+			[self.functionView addSubview:self.nowSpecialView];
+			[self addFunctionViewConstraintsInView:self.nowSpecialView];
+		}
+		
+		[self.nowSpecialView specialReservations];
+	}
+	else if(sender.tag == 2){
+		[self.nowSpecialView removeFromSuperview];
+		if (!self.airPortSpecialView.superview) {
+			[self.functionView addSubview:self.airPortSpecialView];
+			[self addFunctionViewConstraintsInView:self.airPortSpecialView];
+		}
+		
+		[self.airPortSpecialView fromAirPort];
+	}
+	
+	[self updateViewAnimate];
 }
+
+
+-(void)toAction{
+
+}
+
+-(void)updateViewAnimate{
+	[self.view setNeedsUpdateConstraints];
+	[self.functionView setNeedsUpdateConstraints];
+	[UIView animateWithDuration:0.15 animations:^{
+		[self.view layoutIfNeeded];
+		[self.functionView layoutIfNeeded];
+	}];
+}
+
+-(void)addFunctionViewConstraintsInView:(UIView *)view{
+	
+	view.translatesAutoresizingMaskIntoConstraints = NO;
+	NSMutableArray *array = [NSMutableArray array];
+	NSLayoutConstraint *leftConstraint = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.functionView attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0];
+	[array addObject:leftConstraint];
+	
+	NSLayoutConstraint *rightConstraint = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.functionView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0];
+	[array addObject:rightConstraint];
+	
+	NSLayoutConstraint *topConstraint = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.functionView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0];
+	[array addObject:topConstraint];
+	
+	NSLayoutConstraint *bottomConstraint = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.functionView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
+	
+	[array addObject:bottomConstraint];
+	
+	[self.functionView addConstraints:[array copy]];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

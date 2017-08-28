@@ -23,14 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-tW-xpl">
-                                <rect key="frame" x="16" y="529" width="343" height="122"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="528" width="343" height="123"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="122" id="qCA-GC-pGy"/>
+                                    <constraint firstAttribute="height" priority="250" constant="123" id="Nca-RY-R4g"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ7-xS-h1C">
-                                <rect key="frame" x="16" y="486" width="158" height="35"/>
+                                <rect key="frame" x="16" y="485" width="158" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z00-qH-JeU">
                                         <rect key="frame" x="8" y="2" width="42" height="30"/>
@@ -52,6 +52,9 @@
                                         <rect key="frame" x="106" y="2" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="接送机"/>
+                                        <connections>
+                                            <action selector="chooseType:" destination="9Ur-uh-LLH" eventType="touchUpInside" id="ISD-cQ-aAa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,13 +74,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="functionHeightConstrains" destination="qCA-GC-pGy" id="bbk-BX-Ugs"/>
                         <outlet property="functionView" destination="AhK-tW-xpl" id="Tzm-gP-RAr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baT-Se-l8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-199.19999999999999" y="152.47376311844079"/>
+            <point key="canvasLocation" x="85.599999999999994" y="101.19940029985008"/>
         </scene>
     </scenes>
 </document>
